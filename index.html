@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Printing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Custom T-Shirt Printing</h1>
+    </header>
+    
+    <main>
+        <form id="orderForm">
+            <!-- Size -->
+            <label for="size">Size:</label>
+            <select id="size" required>
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+            </select>
+
+            <!-- Color -->
+            <label for="color">Color:</label>
+            <input type="color" id="color" required>
+
+            <!-- Design -->
+            <label for="design">Design Text:</label>
+            <input type="text" id="design" placeholder="Enter your text" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Place Order</button>
+        </form>
+
+        <!-- Preview Section -->
+        <div id="preview">
+            <h2>Preview:</h2>
+            <div id="shirtPreview">
+                <p id="previewText">Your design will appear here</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
